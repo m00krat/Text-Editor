@@ -6,7 +6,7 @@ const initdb = async () =>
       if (db.objectStoreNames.contains('jate')) {
         console.log('jate database already exists');
         return;
-      }
+      }s
       db.createObjectStore('jate', { keyPath: 'id', autoIncrement: true });
       console.log('jate database created');
     },
